@@ -1,7 +1,5 @@
 /* Gerais */
-html{
-    background-image: linear-gradient(to bottom, #a0b5c8 10%, #b3c1cc 40%,#bdc6ce);
-}
+
 body{
     font-family: 'Roboto', sans-serif;
 
@@ -12,7 +10,6 @@ body{
 }
 .container{
     padding: 70px 0;
-
 }
 p,li{
     color: #444;
@@ -68,6 +65,14 @@ header,
 .container-fluid {
     padding: 0;
   }
+  #boot h2
+   {
+    color:black;
+  }
+  .img-fluid{
+    border-radius: 18px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
+  }
   
   #mainSlider .carousel-inner, #mainSlider .carousel-item {
     height: 90vh;
@@ -116,7 +121,7 @@ header,
 /* Sobre a Empresa */
 
 #about-area{
-    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #a0b5c8 10%, #b3c1cc 40%,#bdc6ce);
 
 }
 .main-title{
@@ -271,6 +276,10 @@ header,
     background-color: #65daf9;
     border-color: #65daf9;
 }
+#portfolio-area{
+    background-image: linear-gradient(to bottom, #a0b5c8 10%, #b3c1cc 40%,#bdc6ce);
+
+}
 
 /* NewsLetter */
 #news-area{
@@ -378,9 +387,13 @@ header,
 .contact-box p{
     font-size: 16px;
 }
+.contact-title a{
+    
+}
 .contact-title{
     font-weight: bold;
     color: #3ec1d5;
+    
 }
 
 #msg-box p{
@@ -417,11 +430,12 @@ header,
 #copy-area .container a{
     font-weight: bold;
     color: #444;
+    transition: .4s;
 }
 
 #copy-area .container a:hover{
     text-decoration: none;
-    color: #3ec1d5;
+    color: #a0b5c8;
 }
 
 /* Responsive */
