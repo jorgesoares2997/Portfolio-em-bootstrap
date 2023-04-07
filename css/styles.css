@@ -526,8 +526,10 @@ header,
         margin-bottom: 40px;
     }
 
-    #mainSlider .carousel-caption p{
-        display: none;
+    #mainSlider .carousel-caption p,
+      #mainSlider .carousel-caption h2{
+    {
+      display: none;
     }
     .carousel-caption .main-btn{
         font-size: 14px;
