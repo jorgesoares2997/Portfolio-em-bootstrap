@@ -145,8 +145,8 @@ $(document).ready(function() {
         }else if (btnId == 'team-menu'){
             scrollTo = teamSection;
 
-        }else if (btnId == 'team-menu'){
-            scrollTo = teamSection;
+     //   }else if (btnId == 'team-menu'){
+            //scrollTo = teamSection;
 
         }else if (btnId == 'portfolio-menu'){
             scrollTo = portfolioSection;
