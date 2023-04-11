@@ -12,7 +12,7 @@ $(document).ready(function() {
         step: function(state,circle){
             circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 60);
+            let value = Math.round(circle.value() * 100);
 
             circle.setText(value);
         }
@@ -28,7 +28,7 @@ $(document).ready(function() {
         step: function(state,circle){
             circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 254);
+            let value = Math.round(circle.value() * 100);
 
             circle.setText(value);
         }
@@ -44,7 +44,7 @@ $(document).ready(function() {
         step: function(state,circle){
             circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 32);
+            let value = Math.round(circle.value() * 100);
 
             circle.setText(value);
         }
@@ -60,7 +60,7 @@ $(document).ready(function() {
         step: function(state,circle){
             circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 5243);
+            let value = Math.round(circle.value() * 100);
 
             circle.setText(value);
         }
@@ -74,10 +74,10 @@ $(document).ready(function() {
 
         let scroll = $(window).scrollTop();
         if(scroll > (dataAreaOffset.top - 500) && stop == 0){
-            circleA.animate(1.0);
-            circleB.animate(1.0);
-            circleC.animate(1.0);
-            circleD.animate(1.0);
+            circleA.animate(0.75);
+            circleB.animate(0.55);
+            circleC.animate(0.6);
+            circleD.animate(0.82);
 
             stop =  1;
         }
@@ -87,8 +87,10 @@ $(document).ready(function() {
     //parallax
     setTimeout(function(){
 
-        $('#data-area').parallax({imageSrc:'img/cidadeparallax.png'});
-        $('#apply-area').parallax({imageSrc:'img/pattern.png'});
+        // $('#bootstrap-area').parallax({imageSrc:'img/Bootstrap.png'});
+        // $('#react-area').parallax({imageSrc:'img/React JS.png'});
+        // $('#html-area').parallax({imageSrc:'img/HTML e CSS.png'});
+        $('#data-area').parallax({imageSrc:'img/Bootstrap.png'});
 
     }, 250);
 
@@ -141,21 +143,16 @@ $(document).ready(function() {
         let btnId = $(this).attr('id');
 
         if(btnId == 'about-menu'){
-            scrollTo=aboutSection;
+            scrollTo = aboutSection;
+        
+        }else if (btnId == 'services-menu'){
+        scrollTo = servicesSection;
         }else if (btnId == 'team-menu'){
-            scrollTo = teamSection;
-
-        }else if (btnId == 'team-menu'){
-            scrollTo = teamSection;
-
+             scrollTo = teamSection;       
         }else if (btnId == 'portfolio-menu'){
             scrollTo = portfolioSection;
-
         }else if (btnId == 'contact-menu'){
-            scrollTo = contactSection;
-
-        }else if (btnId == 'services-menu'){
-            scrollTo = servicesSection;
+            scrollTo = contactSection;     
         }else {
             scrollTo=bannerSection
         }
