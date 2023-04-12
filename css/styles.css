@@ -257,6 +257,11 @@ header,
     margin-bottom: 50px;
     text-align: center;
 }
+#filt{
+    height: auto;
+    width: auto;
+
+}
 
 #portfolio-area .filter-btn{
     color: #444;
