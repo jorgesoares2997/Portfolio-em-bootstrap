@@ -87,10 +87,9 @@ $(document).ready(function() {
     //parallax
     setTimeout(function(){
 
-        // $('#bootstrap-area').parallax({imageSrc:'img/Bootstrap.png'});
-        // $('#react-area').parallax({imageSrc:'img/React JS.png'});
-        // $('#html-area').parallax({imageSrc:'img/HTML e CSS.png'});
+    
         $('#data-area').parallax({imageSrc:'img/Bootstrap.png'});
+        
 
     }, 250);
 
