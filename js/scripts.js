@@ -3,11 +3,11 @@ $(document).ready(function() {
 
     let containerA= document.getElementById('circleA')
     let circleA = new ProgressBar.Circle(containerA, {
-        color: '#64daf9',
+        color: '#f99364',
         strokeWidth: 8,
         duration: 1400,
         from: {color: '#AAA'},
-        to: {color: '#64daf9'},
+        to: {color: '#f99364'},
 
         step: function(state,circle){
             circle.path.setAttribute('stroke', state.color);
@@ -19,11 +19,11 @@ $(document).ready(function() {
     });
     let containerB= document.getElementById('circleB')
     let circleB = new ProgressBar.Circle(containerB, {
-        color: '#64daf9',
+        color: '#f99364',
         strokeWidth: 8,
         duration: 1600,
         from: {color: '#AAA'},
-        to: {color: '#64daf9'},
+        to: {color: '#f99364'},
 
         step: function(state,circle){
             circle.path.setAttribute('stroke', state.color);
@@ -35,32 +35,32 @@ $(document).ready(function() {
     });
     let containerC= document.getElementById('circleC')
     let circleC = new ProgressBar.Circle(containerC, {
-        color: '#64daf9',
+        color: '#f99364',
         strokeWidth: 8,
         duration: 2000,
         from: {color: '#AAA'},
-        to: {color: '#64daf9'},
+        to: {color: '#f99364'},
 
         step: function(state,circle){
             circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 100);
+            let value = Math.round(circle.value() * 12);
 
             circle.setText(value);
         }
     });
     let containerD= document.getElementById('circleD')
     let circleD = new ProgressBar.Circle(containerD, {
-        color: '#64daf9',
+        color: '#f99364',
         strokeWidth: 8,
         duration: 2200,
         from: {color: '#AAA'},
-        to: {color: '#64daf9'},
+        to: {color: '#f99364'},
 
         step: function(state,circle){
             circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 100);
+            let value = Math.round(circle.value() * 12);
 
             circle.setText(value);
         }
@@ -88,7 +88,7 @@ $(document).ready(function() {
     setTimeout(function(){
 
     
-        $('#data-area').parallax({imageSrc:'img/Bootstrap.png'});
+        $('#data-area').parallax({imageSrc:'img/para.jpg'});
         
 
     }, 250);
