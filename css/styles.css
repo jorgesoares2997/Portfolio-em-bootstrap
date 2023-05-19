@@ -2,11 +2,10 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-
 }
+
 .row{
     margin: 0;
-
 }
 .container{
     padding: 70px 0;
@@ -15,6 +14,58 @@ p,li{
     color: #444;
     font-size: 14px;
 }
+
+/* Eagle  */
+
+#main-eagle{
+    margin-top: 100px;
+    text-align: start;
+    background-color: #fff;
+    width: 100%;
+}
+#main-eagle p, li{
+    font-size: 22px;
+    margin-top: 22px;
+    margin-bottom: 32px;
+
+}
+
+#main-eagle h1{
+    font-size: 42px;
+}
+#eagle-img{
+    width: 100%;
+}
+.bone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+      
+}
+#cor{
+    background-color: #FFCE80;
+    padding: 30px;
+}
+.bone img{
+    margin-top: 50px;
+}
+.first{
+    margin-top: 60px;
+}
+
+/* About  */
+#instituto-milagres{
+    margin-top: 62px;
+    background-color: #FFCE80;
+}
+#foto h2{
+    margin-bottom: 22px;
+}
+
+#estrofe p{
+    font-size: 22px;
+}
+
 
 /* Barra de navegação  */
 header,
@@ -37,7 +88,7 @@ header,
 }
 
 #logo:hover{
-    border-color: #a0b5c8;
+    border-color: #ffb133;
     
 }
 .navbar-brand{
@@ -60,6 +111,81 @@ header,
 .nav-item.active{
     border-bottom: 3px solid #fff;
 }
+
+/* Parallax  */
+
+#cur h2{
+    padding: 16px;
+     border-radius: 12px;
+     background-color: #FFB133;
+     color: #f3f3f3;
+     border-style: solid;    
+     margin-top: 800px;
+     text-decoration: none;
+     transition: .3s;
+ }
+ 
+ #cur h2:hover{
+     background-color: transparent;
+     color: #FFB133;    
+ }
+ 
+ #cur a{
+     text-decoration: none;
+ }
+ 
+ #ins h2{
+     padding: 16px;
+      border-radius: 12px;
+      background-color: #FFB133;
+      color: #f3f3f3;
+      margin-left: 300px;
+      margin-top: 800px;
+      text-decoration: none;
+      transition: .3s;
+      border-style: solid;
+  }
+ 
+  #ins h2:hover{
+      background-color: transparent;
+      color: #FFB133;
+      border-color: #FFB133;
+  }
+ 
+  #ins a{
+      text-decoration: none;
+  }
+ 
+  #sobre h2{
+     padding: 16px;
+      border-radius: 12px;
+      background-color: #FFB133;
+      color: #f3f3f3;
+      margin-left: 300px;
+      margin-top: 800px;
+      text-decoration: none;
+      transition: .3s;
+      border-style: solid;
+ }
+ 
+  #sobre h2:hover{
+      background-color: transparent;
+      color: #FFB133;
+ }
+ 
+  #sobre a{
+      text-decoration: none;
+  }
+ 
+ 
+ .para{
+     min-height: 1100px;
+ }
+ 
+ .para h1{
+     color: #fff;
+ }
+ 
 
 /* Slider */
 
@@ -122,8 +248,13 @@ header,
 /* Sobre a Empresa */
 
 #about-area{
-    background-image: linear-gradient(to bottom, #a0b5c8 10%, #b3c1cc 40%,#bdc6ce);
+    background-color: #FFCE80;
+}
 
+#prof p,
+.check li{
+    font-size: 18px;
+    color: #FFF;
 }
 .main-title{
     color: #444;
@@ -155,7 +286,7 @@ header,
     line-height: 30px;
 }
 #about-list i{
-    color: #65daf9;
+    color: #B37C24;
     margin-right: 15px;
 }
 
@@ -181,27 +312,9 @@ header,
     color: #65daf9;
 }
 
-/* Dados */
 
-.circle-box div{
-    padding: 0 40px;
-}
-.progressbar-text{
-    font-weight: bold;
-    font-size: 32px;
-}
-#data-area p{
-    color: #fff;
-    text-align: center;
-    font-size: 26px;
-    margin-top: 20px;
-}
 
-/* Time  */
 
-.card-body{
-    text-align: center;
-}
 
 /* Trabalhe conosco  */
 
@@ -283,7 +396,7 @@ header,
     border-color: #65daf9;
 }
 #portfolio-area{
-    background-image: linear-gradient(to bottom, #a0b5c8 10%, #b3c1cc 40%,#bdc6ce);
+   background-color: #FFCE80;
 
 }
 

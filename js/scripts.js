@@ -1,94 +1,94 @@
 $(document).ready(function() {
     // progress bar
 
-    let containerA= document.getElementById('circleA')
-    let circleA = new ProgressBar.Circle(containerA, {
-        color: '#f99364',
-        strokeWidth: 8,
-        duration: 1400,
-        from: {color: '#AAA'},
-        to: {color: '#f99364'},
+    // let containerA= document.getElementById('circleA')
+    // let circleA = new ProgressBar.Circle(containerA, {
+    //     color: '#f99364',
+    //     strokeWidth: 8,
+    //     duration: 1400,
+    //     from: {color: '#AAA'},
+    //     to: {color: '#f99364'},
 
-        step: function(state,circle){
-            circle.path.setAttribute('stroke', state.color);
+    //     step: function(state,circle){
+    //         circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 100);
+    //         let value = Math.round(circle.value() * 100);
 
-            circle.setText(value);
-        }
-    });
-    let containerB= document.getElementById('circleB')
-    let circleB = new ProgressBar.Circle(containerB, {
-        color: '#f99364',
-        strokeWidth: 8,
-        duration: 1600,
-        from: {color: '#AAA'},
-        to: {color: '#f99364'},
+    //         circle.setText(value);
+    //     }
+    // });
+    // let containerB= document.getElementById('circleB')
+    // let circleB = new ProgressBar.Circle(containerB, {
+    //     color: '#f99364',
+    //     strokeWidth: 8,
+    //     duration: 1600,
+    //     from: {color: '#AAA'},
+    //     to: {color: '#f99364'},
 
-        step: function(state,circle){
-            circle.path.setAttribute('stroke', state.color);
+    //     step: function(state,circle){
+    //         circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 100);
+    //         let value = Math.round(circle.value() * 100);
 
-            circle.setText(value);
-        }
-    });
-    let containerC= document.getElementById('circleC')
-    let circleC = new ProgressBar.Circle(containerC, {
-        color: '#f99364',
-        strokeWidth: 8,
-        duration: 2000,
-        from: {color: '#AAA'},
-        to: {color: '#f99364'},
+    //         circle.setText(value);
+    //     }
+    // });
+    // let containerC= document.getElementById('circleC')
+    // let circleC = new ProgressBar.Circle(containerC, {
+    //     color: '#f99364',
+    //     strokeWidth: 8,
+    //     duration: 2000,
+    //     from: {color: '#AAA'},
+    //     to: {color: '#f99364'},
 
-        step: function(state,circle){
-            circle.path.setAttribute('stroke', state.color);
+    //     step: function(state,circle){
+    //         circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 12);
+    //         let value = Math.round(circle.value() * 12);
 
-            circle.setText(value);
-        }
-    });
-    let containerD= document.getElementById('circleD')
-    let circleD = new ProgressBar.Circle(containerD, {
-        color: '#f99364',
-        strokeWidth: 8,
-        duration: 2200,
-        from: {color: '#AAA'},
-        to: {color: '#f99364'},
+    //         circle.setText(value);
+    //     }
+    // });
+    // let containerD= document.getElementById('circleD')
+    // let circleD = new ProgressBar.Circle(containerD, {
+    //     color: '#f99364',
+    //     strokeWidth: 8,
+    //     duration: 2200,
+    //     from: {color: '#AAA'},
+    //     to: {color: '#f99364'},
 
-        step: function(state,circle){
-            circle.path.setAttribute('stroke', state.color);
+    //     step: function(state,circle){
+    //         circle.path.setAttribute('stroke', state.color);
 
-            let value = Math.round(circle.value() * 12);
+    //         let value = Math.round(circle.value() * 12);
 
-            circle.setText(value);
-        }
-    });
+    //         circle.setText(value);
+    //     }
+    // });
 
-    // iniciando o loader quando o usuario chega no elemento
-    let dataAreaOffset = $('#data-area').offset();
-    let stop = 0;
+    // // iniciando o loader quando o usuario chega no elemento
+    // let dataAreaOffset = $('#data-area').offset();
+    // let stop = 0;
 
-    $(window).scroll(function(e){
+    // $(window).scroll(function(e){
 
-        let scroll = $(window).scrollTop();
-        if(scroll > (dataAreaOffset.top - 500) && stop == 0){
-            circleA.animate(0.75);
-            circleB.animate(0.55);
-            circleC.animate(0.6);
-            circleD.animate(0.82);
+    //     let scroll = $(window).scrollTop();
+    //     if(scroll > (dataAreaOffset.top - 500) && stop == 0){
+    //         circleA.animate(0.75);
+    //         circleB.animate(0.55);
+    //         circleC.animate(0.6);
+    //         circleD.animate(0.82);
 
-            stop =  1;
-        }
+    //         stop =  1;
+    //     }
 
-    });
+    // });
 
     //parallax
     setTimeout(function(){
 
     
-        $('#data-area').parallax({imageSrc:'img/para.jpg'});
+        $('#data-area').parallax({imageSrc:'img/1.jpeg'});
         
 
     }, 250);
