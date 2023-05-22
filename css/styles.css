@@ -591,9 +591,33 @@ header,
     .circle-box div{
         padding: 0 10px;
     }
+
+
     #data-area p{
         font-size: 16px;
     }
+    #data-area{
+      max-height: 450px;
+            
+    }
+    #cur,
+    #sobre,
+    #ins{
+        display: none;
+    }
+   
+    #ins h2{
+        font-size: 18px;
+    }
+
+    /* Portfolio  */
+    #portfolio-area{
+        margin-bottom: 20px;
+    }
+    .project-box{
+        width: 50%;
+    }
+
     /* Team  */
     .card-title{
         font-size: 14px;
@@ -628,7 +652,25 @@ header,
         font-size: 16px;
     }
 
+    /* Eagle  */
+    .bone img{
+      width: 50%;
+      height: 50%;
+    }
+    #eagle-body{
+        padding: 12px;
+    }
 
+    /* Sobre nós  */
+
+    #instituto-milagres{
+       margin-top: 84px;
+    }
+    #foto img{
+        width: 50%;
+    }
+
+    
 }
 /* Celular */
 @media (max-width:450px) {
