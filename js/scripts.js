@@ -88,7 +88,7 @@ $(document).ready(function() {
     setTimeout(function(){
 
     
-        $('#data-area').parallax({imageSrc:'img/1.jpeg'});
+        $('#data-area').parallax({imageSrc:'img/2.jpeg'});
         
 
     }, 250);
@@ -130,7 +130,7 @@ $(document).ready(function() {
     // Scroll para seções 
     let navBtn = $('.nav-item');
 
-    let bannerSection = $('#mainSlider');
+    let bannerSection = $('#data-area');
     let aboutSection = $('#about-area');
     let servicesSection = $('#services-area');
     let teamSection = $('#team-area');
